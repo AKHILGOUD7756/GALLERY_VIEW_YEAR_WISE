@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery Popup</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fancybox 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: Segoe UI, sans-serif;
+        }
+
+        .gallery-box {
+            position: relative;
+            overflow: hidden;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+
+        .gallery-box img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.25,0.1,0.25,1);
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .gallery-box:hover img {
+            transform: scale(1.12);
+        }
+
+        /* Caption */
+        .caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0,0,0,0.45);
+            color: #fff;
+            font-size: 18px;
+            border-bottom-left-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container py-5">
+    <h3 class="text-center mb-4">IMAGE GALLERY</h3>
+
+    <div class="row">
+        
+        <!-- 10 Image Boxes (col-lg-3) -->
+        <!-- Repeat starts here -->
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 1" href="https://picsum.photos/id/1011/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1011/400/300">
+                    <div class="caption">Image 1</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 2" href="https://picsum.photos/id/1015/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1015/400/300">
+                    <div class="caption">Image 2</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 3" href="https://picsum.photos/id/1020/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1020/400/300">
+                    <div class="caption">Image 3</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 4" href="https://picsum.photos/id/1024/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1024/400/300">
+                    <div class="caption">Image 4</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 5" href="https://picsum.photos/id/1031/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1031/400/300">
+                    <div class="caption">Image 5</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 6" href="https://picsum.photos/id/1041/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1041/400/300">
+                    <div class="caption">Image 6</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 7" href="https://picsum.photos/id/1050/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1050/400/300">
+                    <div class="caption">Image 7</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 8" href="https://picsum.photos/id/1062/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1062/400/300">
+                    <div class="caption">Image 8</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 9" href="https://picsum.photos/id/1074/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1074/400/300">
+                    <div class="caption">Image 9</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <a data-fancybox="gallery" data-caption="Image 10" href="https://picsum.photos/id/1084/1200/800">
+                <div class="gallery-box">
+                    <img src="https://picsum.photos/id/1084/400/300">
+                    <div class="caption">Image 10</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Repeat ends -->
+
+    </div>
+</div>
+
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+</body>
+</html>
